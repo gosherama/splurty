@@ -32,6 +32,21 @@
 <hr />
 <br class="clear" />
 
+<div class = "container">
     <%= yield %>
+</div>
+
+<div class="footer">
+  <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <%= link_to "This is not enough, I need more!", "#", class: "next-quote" %> 
+        </div>
+        <div class="col-6 footer-blurb">
+          Proudly hacked in Valbonne by Alex
+        </div>
+      </div>
+  </div>
+</div>
   </body>
 </html>
