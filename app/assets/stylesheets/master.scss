@@ -1,11 +1,10 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Overpass');
 
-//--GENERAL
+//--GENERAL-------------
 ::selection {
   background-color: #f84342;
 }
-
 
 //--HEADER STYLING------
 header {
@@ -26,6 +25,7 @@ hr {
   margin: 10px 10px;
 }
 
+/**
 .circle {
   font-weight: bold;
   font-style: italic;
@@ -42,13 +42,14 @@ hr {
   line-height: 16px;
   cursor: pointer;
   transform: rotate(11deg);
-  -ms-transform: rotate(11deg); /* IE 9 */
-  -webkit-transform: rotate(11deg); /* Opera, Chrome, and Safari */
+  -ms-transform: rotate(11deg);
+  -webkit-transform: rotate(11deg);
 }
 .logo:hover {
   text-decoration: none;
-}
-.slogan {
+}*****/
+
+ .slogan {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style:italic;
   padding-top:26px;
