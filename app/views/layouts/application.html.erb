@@ -11,25 +11,18 @@
   <body>
 <header class = "row">
   <div class ="col-md-3">
-    <%= link_to root_path, class: "logo" do %>
-      <div class="circle">
-        <br />
-        You know
-        <br />
-        You need
-        <br />
-        to code
-      </div>
+    <%= link_to root_path do %>
+      <%= image_tag 'zen.svg', id:'nav-zen' %>
     <% end %>
   </div>
   <div class="col-md-4 hidden-xs-down slogan">
-    Splurting out common sense project management wisdom
+    Splurting out common sense wisdom
   </div>
   <div class = "col-md-5 links">
     <!-- Button trigger modal -->
-    <%= link_to 'Contribute', '#', data: { toggle: 'modal', target: "#myModal"  } %>
+    <%= link_to 'Contribute', '#', data: { toggle: 'modal', target: "#myModal"  }, class:"effect-underline" %>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <%= link_to 'About', about_path %>
+    <%= link_to 'About', about_path, class:"effect-underline" %>
   </div>
 </header>
 
@@ -57,9 +50,6 @@
   </div>
 </div>
 
-
-
-
 <hr />
 <br class="clear" />
 
@@ -76,10 +66,10 @@
   <div class="container">
       <div class="row">
         <div class="col-12 col-sm-6">
-          <%= link_to "This is not enough, I need more!", root_path, class: "next-quote" %> 
+          <%= link_to "This is not enough, give more wisdom!", root_path, class: "next-quote" %> 
         </div>
         <div class="col-12 col-sm-6 footer-blurb">
-          Proudly hacked in Valbonne by Alex
+          Made with <%= image_tag 'heart.svg', class:"footer-img" %> and <%= image_tag 'ruby.svg', class:"footer-img" %> by Alex in Valbonne, France.
         </div>
       </div>
   </div>

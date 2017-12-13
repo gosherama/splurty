@@ -20,6 +20,12 @@ hr {
 }
 
 //--NAVBAR--LOGO--------
+#nav-zen {
+  width: 80px;
+  height: 80px;
+  margin: 10px 10px;
+}
+
 .circle {
   font-weight: bold;
   font-style: italic;
@@ -46,18 +52,44 @@ hr {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style:italic;
   padding-top:26px;
+  font-size:1.2em;
 }
 .about {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
 }
-
+//--NAVBAR --- LINKS-----
 .links {
   padding-top:26px;
 }
 .links a {
   color:black;
   font-size:25px;
-  border-bottom: 1px solid #dfdfdf;
+  //border-bottom: 1px solid #dfdfdf;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+a.effect-underline:after {
+	content: '';
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  height: 1em;
+  width: 100%;
+  border-bottom: 1px solid;
+  margin-top: 10px;
+  opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+a.effect-underline:hover:after {
+  opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
 }
 
 //---MODAL--------------
@@ -93,12 +125,20 @@ h2 span {
   font-family: 'Overpass', sans-serif;
   font-size:20px;
 }
+a.next-quote {
+  text-decoration:none;
+}
 .footer-blurb {
   font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
   font-style: italic;
   text-align: right;
-  font-size:10px;
+  font-size:1.2em;
 }
+.footer-img {
+  width:30px;
+  height: 30px;
+}
+
 //---MEDIA QUERIES------
 @media (max-width: 750px) {
   .footer-blurb {
