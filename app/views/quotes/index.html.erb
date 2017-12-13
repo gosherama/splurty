@@ -1,2 +1,11 @@
-<h1><%= @quote.saying %></h1>
-<h2>- <%= @quote.author %></h2>
+<h2>
+<span>SPLURTY / NO. <%= @quote.id %></span>
+</h2>
+
+<h1><%= image_tag 'left-quote.svg', class:"quote-tag" %><%= @quote.saying %><%= image_tag 'left-quote.svg', class:"quote-tag" %></h1>
+<h2 class= "float-right" >- <%= @quote.author %></h2>
+
+<br class="clear" />
+<br />
+<br />
+<br />
